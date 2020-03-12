@@ -1,0 +1,41 @@
+body {
+  font-family: "Arial";
+}
+
+
+.carousel {
+  outline: 1px dotted red; 
+  position: relative;
+  overflow-x: hidden;
+  width: 500px;
+  height: 500px;
+}
+
+.carousel__img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-100%);
+}
+
+.show {
+  display: block;
+  z-index: 1;
+  animation: slide 3s ease;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 2;
+}
+
+
+@keyframes slide {
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
