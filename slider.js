@@ -44,7 +44,7 @@ class Slider {
     let currImg = this.imgs[this.index];
     currImg.classList.add("show");
     this.index++;
-    if (this.index >= this.endIndex) {
+    if (this.index > this.endIndex) {
       this.index = 0;
     }
   }
