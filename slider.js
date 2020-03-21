@@ -1,4 +1,4 @@
-const parent = document.querySelectorAll('.carousel');
+const parent = document.querySelector('.carousel');
 const imgs = document.querySelectorAll('.carousel img');
 
 class Slider {
@@ -54,4 +54,4 @@ class Slider {
 
 const slider = new Slider(imgs, parent, 4000);
 slider.createBtns();
-// slider.start();
+slider.start();
