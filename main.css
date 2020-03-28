@@ -8,6 +8,7 @@ body {
 }
 
 .carousel__img {
+  margin: auto;
   max-width: 100%;
   height: auto;
   top: 0;
@@ -23,8 +24,8 @@ body {
 }
 
 .buttons {
-  position: absolute;
-  z-index: 2;
+  position: absolute; 
+  outline: 1px solid green;   
 }
 
 
