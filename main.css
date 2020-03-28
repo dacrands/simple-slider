@@ -5,20 +5,21 @@ body {
 .carousel {
   outline: 1px dotted red; 
   position: relative;  
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .carousel > img {
+  display: none;  
   margin: auto;
   max-width: 100%;
   height: auto;
-  top: 0;
   opacity: 0;
-  display: none;  
 }
 
-.carousel .show {
+.carousel > .show {
   display: block;
   opacity: 1;
+  animation: fadeIn 450ms ease;
 }
 
 .buttons {
@@ -26,4 +27,7 @@ body {
   outline: 1px solid green;   
 }
 
-
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
