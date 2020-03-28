@@ -24,7 +24,7 @@ class Slider {
 
   createBtns() {
     const btnsParent = document.createElement('div');
-    btnsParent.classList.add('.buttons');
+    btnsParent.classList.add('buttons');
     this.parent.appendChild(btnsParent);
     for (let i = 0; i < this.imgs.length; i++) {
       let newBtn = document.createElement('button');
