@@ -18,9 +18,7 @@ body {
 
 .show {
   display: block;
-  z-index: 1;
   opacity: 1;
-  animation: slideIn 2s ease;
 }
 
 .buttons {
@@ -29,8 +27,3 @@ body {
 }
 
 
-@keyframes show {
-  to {
-    opacity: 1;
-  }
-}
