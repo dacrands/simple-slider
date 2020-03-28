@@ -23,6 +23,9 @@ class Slider {
   }
 
   createBtns() {
+    const btnsParent = document.createElement('div');
+    btnsParent.classList.add('.buttons');
+    this.parent.appendChild(btnsParent);
     for (let i = 0; i < this.imgs.length; i++) {
       let newBtn = document.createElement('button');
       newBtn.value = newBtn.innerText = i;       
@@ -31,8 +34,8 @@ class Slider {
         let currImg = this.imgs[e.target.value];
         currImg.classList.add('show');
       });
-      document.querySelector('.buttons').appendChild(newBtn);
-    }
+      btnsParent.appendChild(newBtn);
+    }    
   }
 
   clearShowImgClass() {
