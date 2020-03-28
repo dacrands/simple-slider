@@ -7,7 +7,7 @@ body {
   position: relative;  
 }
 
-.carousel__img {
+.carousel > img {
   margin: auto;
   max-width: 100%;
   height: auto;
@@ -16,7 +16,7 @@ body {
   display: none;  
 }
 
-.show {
+.carousel .show {
   display: block;
   opacity: 1;
 }
