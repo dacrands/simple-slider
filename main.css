@@ -12,8 +12,9 @@ body {
 .carousel > img {
   display: none;  
   margin: auto;
+  max-height: 500px;
   max-width: 100%;
-  height: auto;
+  width: auto;
   opacity: 0;
 }
 
@@ -24,8 +25,27 @@ body {
 }
 
 .buttons {
+  /* outline: 1px solid green;    */
   position: absolute; 
-  outline: 1px solid green;   
+  bottom: 10px;
+  left: 10px;
+}
+
+.buttons > button {
+  height: 15px;
+  width: 15px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(185, 184, 184, 0.7);
+}
+
+.buttons > button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px #0066ff;
+  background: rgba(226, 224, 224, 0.9);
 }
 
 @keyframes fadeIn {
